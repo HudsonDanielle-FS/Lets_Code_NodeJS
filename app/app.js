@@ -7,8 +7,8 @@ const app = express();
 app.use(express.json());
 // req.body.username req.body.password
 
-// service actuator - localhost:300
-app.get("/", (req, res) => {
+// service actuator - localhost:3000
+app.get('/', (req, res) => {
   this.response.status(200).json({ message: "Service is up" });
 });
 
